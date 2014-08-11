@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>TShop</title>
+  <meta charset="utf-8">
+  <%= stylesheet_link_tag    "spree/application", media: "all" %>
+  <%= javascript_include_tag "spree/application" %>
+  <%= csrf_meta_tags %>
 </head>
-<body>
-  <h1>This is the layout for my TShop</h1>
+<body class="pace-done">
+  
+  <%= render 'spree/shared/header_navigation' -%>
+
 </body>
 </html>

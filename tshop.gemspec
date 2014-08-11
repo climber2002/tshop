@@ -22,6 +22,8 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.1.4"
 
   s.add_runtime_dependency 'bootstrap-sass',             '~> 3.2.0'
+  s.add_runtime_dependency 'sass-rails',                 '>= 3.2'
+  s.add_runtime_dependency 'autoprefixer-rails'
   s.add_runtime_dependency 'bootstrap-kaminari-views',   '~> 0.0.3'
   s.add_runtime_dependency 'spree_core',                 '~> 2.3.0'
   s.add_runtime_dependency 'font-awesome-rails'
