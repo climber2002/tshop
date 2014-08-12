@@ -10,12 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap
- *= require font-awesome
- *= require tshop
- *= require_tree .
+ *= require stylesheets/style
+ *= require stylesheets/animate.min
+ *= require stylesheets/owl.carousel
+ *= require stylesheets/owl.theme
+ *= require stylesheets/ion.checkRadio
+ *= require stylesheets/ion.checkRadio.cloudy
+ *= require stylesheets/jquery.mCustomScrollbar
  *= require_self
  */
-
-@import "bootstrap-sprockets";
-// @import "bootstrap";

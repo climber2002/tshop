@@ -10,9 +10,16 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
-//= require tshop
-//= require spree/frontend
-//= require_tree .
+//= require javascripts/pace.min
+//= require javascripts/jquery.cycle2.min
+//= require javascripts/jquery.easing.1.3
+//= require javascripts/jquery.parallax-1.1
+//= require javascripts/helper-plugins/jquery.mousewheel.min
+//= require javascripts/jquery.mCustomScrollbar
+//= require javascripts/ion-checkRadio/ion.checkRadio.min
+//= require javascripts/grids
+//= require javascripts/owl.carousel.min
+//= require javascripts/jquery.minimalect.min
+//= require javascripts/bootstrap.touchspin
+//= require javascripts/home
+//= require javascripts/script
