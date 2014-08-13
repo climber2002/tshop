@@ -12,3 +12,5 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+gem 'tshop_sample', :git => 'https://github.com/climber2002/tshop_sample'
