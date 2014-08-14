@@ -12,10 +12,15 @@
   
   <%= render 'spree/shared/header_navigation' -%>
 
-  <div class="banner">
+  <% if content_for?(:banner) %>
+    <div class="banner">
+      <%= yield :banner %>
+    </div>
+  <% end %>
+
+  <div class="container main-container"> 
     <%= yield %>  
   </div>
-  
 
 </body>
 </html>
