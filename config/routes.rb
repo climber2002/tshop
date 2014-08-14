@@ -1,2 +1,3 @@
-# Tshop::Engine.routes.draw do
-# end
+Tshop::Engine.routes.draw do
+  root "home#index"
+end

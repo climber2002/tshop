@@ -1,4 +1,4 @@
-module Spree
+module Tshop
   class HomeController < ApplicationController
     helper 'spree/products'
     respond_to :html

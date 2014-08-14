@@ -5,7 +5,7 @@ require 'spree/frontend'
 module Tshop
   class Engine < ::Rails::Engine
 
-    isolate_namespace Spree
+    isolate_namespace Tshop
     engine_name 'tshop'
 
     def self.activate

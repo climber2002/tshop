@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tshop</title>
+  <title>TShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "tshop/application", media: "all" %>
   <%= javascript_include_tag "tshop/application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="pace-done">
+  
+  <%= render 'tshop/shared/header_navigation' -%>
 
-<%= yield %>
+  <div class="banner">
+    <%= yield %>  
+  </div>
+  
 
 </body>
 </html>
