@@ -25,7 +25,7 @@
       </div>
     </div><!--/ left column end -->
 
-     <!-- right column -->
+    <!-- right column -->
     <div class="col-lg-6 col-md-6 col-sm-5">
       <h1 class="product-title"><%= @product.name -%></h1>
       <% if @product.price_in(current_currency) and !@product.price.nil? %>
@@ -40,11 +40,11 @@
         <p><%= product_description(@product) rescue Spree.t(:product_has_no_description) %></p>
       </div>
 
-      <div class="clear" />
+      <div class="clear"></div>
 
       <%= render 'cart_form' -%>
       
-      <div class="clear" />
+      <div class="clear"></div>
       
       <%= render 'product_tab' -%>
       
