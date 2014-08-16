@@ -1,0 +1,58 @@
+<div class="container main-container headerOffset"> 
+  <div class="row">
+    <%= breadcrumbs(@taxon) -%>
+  </div>
+
+  <div class="row transitionfx">
+    <!-- left column -->
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <!-- product Image and Zoom -->
+      <div class="main-image sp-wrap col-lg-12 no-padding"> 
+
+        <% @product.images.each do |i| -%>
+          <%= link_to image_tag(i.attachment.url(:product), class: 'img-responsive', alt: 'img'), 
+                      i.attachment.url(:large) -%>
+        <% end -%>
+
+        <% if @product.has_variants? %>
+          <% @product.variant_images.each do |i| %>
+            <% next if @product.images.include?(i) %>
+            <%= link_to image_tag(i.attachment.url(:product), class: 'img-responsive', alt: 'img'), 
+                      i.attachment.url(:large) -%>
+          <% end %>
+        <% end %>
+
+      </div>
+    </div><!--/ left column end -->
+
+     <!-- right column -->
+    <div class="col-lg-6 col-md-6 col-sm-5">
+      <h1 class="product-title"><%= @product.name -%></h1>
+      <% if @product.price_in(current_currency) and !@product.price.nil? %>
+        <div class="product-price">
+          <span class="price-sales">
+            <%= display_price(@product) %>
+            <span itemprop="priceCurrency" content="<%= @product.currency %>"></span>
+          </span>
+        </div>
+      <% end %>
+      <div class="details-description">
+        <p><%= product_description(@product) rescue Spree.t(:product_has_no_description) %></p>
+      </div>
+
+      <div class="clear" />
+
+      <%= render 'cart_form' -%>
+      
+      <div class="clear" />
+      
+      <%= render 'product_tab' -%>
+      
+      <div style="clear:both"></div>
+      
+      <%= render 'product_share' -%>
+    </div><!--/ right column end -->
+  </div>
+</div>
+
+<div class="gap"></div>
