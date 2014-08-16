@@ -1,5 +1,5 @@
 module Spree
-  class ApplicationController < Spree::StoreController
+  class TshopBaseController < Spree::StoreController
     before_action :load_taxonomies
 
     private

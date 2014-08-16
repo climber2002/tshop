@@ -2351,7 +2351,8 @@ h5.parallaxSubtitle {
 	position: absolute;
 	right: 0!important;
 	text-align: left;
-	bottom: 140px!important;
+	/* bottom: 140px!important; */
+	bottom: 50%!important;
 	width: 100px !important;
 	z-index: 70;
 }

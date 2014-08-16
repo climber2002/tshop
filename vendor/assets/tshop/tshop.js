@@ -21,5 +21,6 @@
 //= require javascripts/owl.carousel.min
 //= require javascripts/jquery.minimalect.min
 //= require javascripts/bootstrap.touchspin
+//= require javascripts/smoothproducts
 //= require javascripts/home
 //= require javascripts/script
