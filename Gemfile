@@ -14,3 +14,6 @@ gemspec
 # gem 'debugger'
 
 gem 'tshop_sample', :git => 'https://github.com/climber2002/tshop_sample'
+
+spree_branch = '2-3-stable'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: spree_branch

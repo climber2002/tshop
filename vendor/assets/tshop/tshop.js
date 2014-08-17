@@ -16,7 +16,7 @@
 //= require javascripts/jquery.parallax-1.1
 //= require javascripts/helper-plugins/jquery.mousewheel.min
 //= require javascripts/jquery.mCustomScrollbar
-//= require javascripts/ion-checkRadio/ion.checkRadio.min
+//= require javascripts/ion-checkRadio/ion.checkRadio
 //= require javascripts/grids
 //= require javascripts/owl.carousel.min
 //= require javascripts/jquery.minimalect.min

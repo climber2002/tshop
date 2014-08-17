@@ -7,7 +7,7 @@
 // Skin details */
 
 .icr__radio, .icr__checkbox {
-    background: url(../../images/icr-dark-skin.png) no-repeat;
+    background: url(/assets/stylesheets/inputs/icr-dark-skin.png) no-repeat;
 }
 
 .icr {
